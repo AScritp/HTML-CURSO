@@ -14,3 +14,9 @@
     display: inline-block;
     list-style: none;
 }
+
+/*INICIO-Estilo para elemestos reemplazables*/
+.show-img img{
+    width: 700px;
+}
+/*FIN-Estilo para elemestos reemplazables*/
