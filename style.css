@@ -1,5 +1,6 @@
 *{
     text-decoration: none;
+    list-style: none;
     
 }
 .nav-bar{
@@ -20,3 +21,23 @@
     width: 700px;
 }
 /*FIN-Estilo para elemestos reemplazables*/
+
+/*INICIO-Estilo para las imagenes de mis apuntes en
+"semantico.html"*/
+.lession-content .box img{
+    width: 80px;
+}
+/*FIN-Estilo para las imagenes de mis apuntes en
+"semantico.html"*/
+
+
+/*INICIO-Estilo para el espaico de contenido en
+"semantico.html"*/
+.principal{
+    padding: 100px;
+}
+.lession-content{
+    margin-top: 100px;
+}
+/*FIN-Estilo para el espaico de contenido en
+"semantico.html"*/
