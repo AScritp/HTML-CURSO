@@ -2,6 +2,10 @@
     text-decoration: none;
     list-style: none;
     
+    
+}
+html{
+    background-color: antiquewhite;
 }
 .nav-bar{
     max-width: 100%;
