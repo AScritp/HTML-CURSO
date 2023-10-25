@@ -43,5 +43,15 @@
 .lession-content{
     margin-top: 100px;
 }
+label{
+    display: inline-block;
+    align-content: space-between;
+    padding: 10px 15px 20px 0px;
+    
+}
+form .confirm{
+    
+    display: list-item;
+}
 /*FIN-Estilo para el espaico de contenido en
 "semantico.html"*/

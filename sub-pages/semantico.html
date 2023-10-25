@@ -36,7 +36,7 @@
                 <header>
                     <h3>Aprender los estos lenguajes</h3>
                 </header>
-                    <ul class="lista-de-metas">
+                    <ol class="lista-de-metas" >
                         <li><a  href="#html">Html</a></li>
                         <li><a href="#css">Css</a></li>
                         <li><a href="#astro">Astro</a></li>
@@ -126,8 +126,63 @@
                 </footer>
             </article>
         </section>
+        <section>
+            <h2>Formulario de contact</h2>
+            <form method="post" action="/">
+                <datalist id="language">
+                    <option value="JavaScript"></option>
+                    <option value="Python"></option>
+                    <option value="React"></option>
+                    <option value="Astro"></option>
+                    <option value="Css"></option>
+                    <option value="Html"></option>
+                </datalist>
+
+                <fieldset>
+                    <legend>Tu info</legend>
+                    <!--HAY 2 FORMAS DE USAR LABEL, CON Y SIN ID-->
+                    <label>Nombre:
+                        <input
+                        type="text" 
+                        name="name" 
+                        placeholder="Miguel Alejandro López Moreno"
+                        required>
+                    </label>
+                    <br>
+                    <label for="mail">Email:</label>
+                    <input 
+                        type="email" 
+                        id="mail" 
+                        name="email" 
+                        placeholder="name@example.com"
+                        required>
+                </fieldset>
+                <fieldset>
+                    <legend>Información adicional</legend>
+                    <label>Telefono:
+                        <input type="tel" name="phonenum" placeholder="+00 000000000" required pattern="[0-9]{11}">
+                    </label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Otros</legend>
+                    <label> ¿Con que lenguaje tienes dudas?
+                        <input list="language">
+                    </label>
+                </fieldset>
+                    <div class="confirm">
+                        <label for="">¿Escribiste todo lo que necesitas?
+                            <input type="checkbox" required>
+                        </label>
+                        <br>
+                        <input type="submit" value="Enviar contact">
+                    </div>
+            </form>
+            
+        </section>
         
     </main>
+
     <footer>
         <div>
             <h4>Contacto</h4>
