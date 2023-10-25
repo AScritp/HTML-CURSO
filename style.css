@@ -16,6 +16,10 @@
     list-style: none;
 }
 
+.nav-bar li a{
+    color: black;
+}
+
 /*INICIO-Estilo para elemestos reemplazables*/
 .show-img img{
     width: 700px;
