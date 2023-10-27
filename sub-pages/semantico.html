@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex, follow" />
-    <meta name="author" content="Miguel Alejandro López Moreno" />
     
+<!--Este elemento oculta aquellas etiquetas/información que no queremos que vea el usuario final-->
+<head>
+    <!--LA EIQUETA META SE REFIERE A META DATOS-->
+    <!--Este elemento ayuda a la página a entender letras compleja-->
+    <meta charset="UTF-8" />
+    <!--Este elemento <META NAME="VIEWOPORT"> ayuda a la página a ser flexible con la resolución de pantalla-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Este elemento <META NAME="ROBOTS"> ayuda a que la página no le hagan seguimiento los motores de busqueda-->
+    <meta name="robots" content="noindex, nofollow" />
+    <!--esta etiqueta <META  NAME="AUTHOR"> sirve para indicar quien es el autor de la pagina--> 
+    <meta name="author" content="Miguel Alejandro López Moreno" /> 
+    <!--Este elemento <LINK REL="ICON"> nos permite perzonalizar el inoco de la pestaña de nuestra WEB-->
     <link rel="icon" type="image/png" href="https://pngimg.com/d/notebook_PNG19226.png">
+    <!--Este elemento <TITLE> nos permire darle un titulo a la pestaña de nuestra WEB-->
     <title>My Personal Project</title>
-    <link rel="stylesheet" href="../script.js" />
+    <!--El elemento <LINK REL="stylesheet"> nos permite exportar librerias 
+        (externas o locales) especializadas en el diseño-->
+    <link rel="script" href="../script.js" />
+    <!--El elemento <LINK REL="script"> nos permite exportar librerias 
+        (externas o locales) especializadas en script-->
     <link rel="stylesheet" href="../style.css" />
-</head>
+    
+   </head>
 
+   <!--Este elemento muestra aquellas etiquetas/información que queremos que vea el usuario final-->
   <body>
+
       <header>
           <nav class="nav-bar">
               <ul>
@@ -20,12 +35,14 @@
                   <li><a target="_blank" href="etiquetas&elementos.html">Etiquetas&Elementos</a></li>
                   <li><a target="_blank" href="elementos-reemplazables.html">Elementos reemplazables</a></li>
                   <li><a target="_blank" href="metadatos-SEO.html">Metadatos</a></li>
+                  <li><a target="_blank" href="multimedia.html">Section multimedia</a></li>
                   
                 </ul>
             </nav>
         </header>
         
     <main>
+        
         <div role="definition" class="principal">
             <h1>Mis apuntes</h1>
             <p>
@@ -159,7 +176,7 @@
                     <label>Nombre:
                         <input
                         type="text" 
-                        name="name" 
+                        name="nombre" 
                         placeholder="Miguel Alejandro López Moreno"
                         required>
                     </label>
@@ -168,7 +185,7 @@
                     <input 
                         type="email" 
                         id="mail" 
-                        name="email" 
+                        name="e-mail" 
                         placeholder="name@example.com"
                         required>
                 </fieldset>
@@ -182,22 +199,49 @@
                 <fieldset>
                     <legend>Otros</legend>
                     <label> ¿Con que lenguaje tienes dudas?
-                        <input list="language">
+                        <input list="language" name="lista-lenguajes">
                     </label>
                 </fieldset>
                     <div class="confirm">
-                        <label for="">¿Escribiste todo lo que necesitas?
-                            <input type="checkbox" required>
+                        <label>¿Escribiste todo lo que necesitas?
+                            <input type="checkbox" name="confirmation" required>
                         </label>
                         <br>
-                        <input type="submit" value="Enviar contact">
+                        <input type="submit" value="Enviar contact"> <!--La etiqueta button si la
+                        escribimos dentro de un formulario hara la función de un input del tipo submit-->
                     </div>
             </form>
             
         </section>
-        
+        <br>
+        <section>
+            <button id="mostrar">Ver anterior proyecto</button>
+            <dialog id="dialog">
+                <section class="show-web">
+                    <h2>Una muesra de mi anterior proyecto</h2>
+                    <iframe src="https://ascritp.github.io/" frameborder="0"></iframe>
+                    <button id="cerrar">Cerrar ventana</button>
+                </section>
+              </dialog>
+              <script>
+                 // Selecciona el botón "mostrar" y el diálogo
+                const mostrarBoton = document.getElementById('mostrar');
+                const dialogo = document.getElementById('dialog');
+                const cerrarBoton = document.getElementById('cerrar');
+                        
+                // Agrega un manejador de evento para mostrar el diálogo
+                mostrarBoton.addEventListener('click', () => {
+                    dialogo.showModal();
+                });
+            
+                // Agrega un manejador de evento para cerrar el diálogo
+                cerrarBoton.addEventListener('click', () => {
+                    dialogo.close();
+                });
+              </script>
+        </section>
     </main>
-
+    
     <footer>
         <div>
             <h4>Contacto</h4>

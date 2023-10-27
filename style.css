@@ -4,8 +4,16 @@
     
     
 }
+* button{
+    background-color: rgb(255, 255, 255);
+}
+
+* input{
+    background-color: rgb(255, 255, 255);
+}
+
 html{
-    background-color: antiquewhite;
+    background-color: rgb(255, 227, 171);
 }
 .nav-bar{
     max-width: 100%;
@@ -56,6 +64,21 @@ label{
 form .confirm{
     
     display: list-item;
+}
+
+.img-with-dilay img{
+    width: 100%;
+    aspect-ratio: 1897/872;
+}
+dialog{
+    width: 100%;
+    height: 600px;
+    
+}
+
+dialog iframe{
+    width: 100%;
+    aspect-ratio: 16/10;
 }
 /*FIN-Estilo para el espaico de contenido en
 "semantico.html"*/
